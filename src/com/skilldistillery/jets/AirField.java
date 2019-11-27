@@ -18,5 +18,7 @@ public class AirField {
 	public void setJets(List<Jet> jets) {
 		this.jets = jets;
 	}
-
+	public void loadAllCargoJets() {
+	}
+	}
 }
