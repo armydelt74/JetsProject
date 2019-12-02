@@ -1,1 +1,5 @@
-Put jets stuff here
+jet tarhill	500 200	5.555	
+jet tarmack	600 300	9.999	
+jet tarley	300 500	3.500	
+jet target	900 1000	6.650	
+jet tartar	500 100	1.250	

@@ -29,6 +29,7 @@ public abstract class Jet {
 	private double speed;
 	private int range;
 	private long price;
+	
 	public Jet(String model, double speed, int range, long price) {
 		super();
 		this.model = model;
@@ -36,5 +37,13 @@ public abstract class Jet {
 		this.range = range;
 		this.price = price;
 	}
-
+	public String toString() {
+	    String output = "model=" + model + ", speed=" + speed + ", range=" + range
+	        + ", price=" + price;
+	    return output;
+	  }
+	public void displayJet() {
+	    String jetData = this.toString();
+	    System.out.println(jetData);
+}
 }
