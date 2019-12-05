@@ -7,30 +7,30 @@ public abstract class Jet {
 	public void setModel(String model) {
 		this.model = model;
 	}
-	public double getSpeed() {
+	public String getSpeed() {
 		return speed;
 	}
-	public void setSpeed(double speed) {
+	public void setSpeed(String speed) {
 		this.speed = speed;
 	}
-	public int getRange() {
+	public String getRange() {
 		return range;
 	}
-	public void setRange(int range) {
+	public void setRange(String range) {
 		this.range = range;
 	}
-	public long getPrice() {
+	public String getPrice() {
 		return price;
 	}
-	public void setPrice(long price) {
+	public void setPrice(String price) {
 		this.price = price;
 	}
 	private String model;
-	private double speed;
-	private int range;
-	private long price;
+	private String speed;
+	private String range;
+	private String price;
 	
-	public Jet(String model, double speed, int range, long price) {
+	public Jet(String model, String speed, String range, String price) {
 		super();
 		this.model = model;
 		this.speed = speed;
@@ -42,6 +42,13 @@ public abstract class Jet {
 	        + ", price=" + price;
 	    return output;
 	  }
+
+	/*
+	 * public void fly() { toString(); double flightTime; flightTime = range/speed;
+	 * System.out.println(flightTime); }
+	 * Integer.parseint (getJets.price)/(getJets.num)
+	 */
+	
 	public void displayJet() {
 	    String jetData = this.toString();
 	    System.out.println(jetData);
