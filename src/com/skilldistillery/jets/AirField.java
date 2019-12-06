@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class AirField {
 
 	public AirField() {
-		super();
+		
 		fillField();
 	}
 
