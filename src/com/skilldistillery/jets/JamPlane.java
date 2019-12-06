@@ -2,7 +2,7 @@ package com.skilldistillery.jets;
 
 public class JamPlane extends Jet implements JamCarrier {
 
-	public JamPlane(String model, String speed, String range, String price) {
+	public JamPlane(String model, double speed, int range, long price) {
 		super(model, speed, range, price);
 		// TODO Auto-generated constructor stub
 	}
@@ -13,5 +13,9 @@ public class JamPlane extends Jet implements JamCarrier {
 		// TODO Auto-generated method stub
 
 	}
+	
+		// TODO Auto-generated method stub
+		
+	
 
 }
