@@ -9,7 +9,14 @@ public class CargoPlane extends Jet implements CargoCarrier {
 
 	@Override
 	public void loadCargo() {
-		System.out.println("Loading Cargo... Beep Beep");
+		System.out.println(this.getModel() + " Loading Cargo... Beep Beep... Cargo loaded");
+	}
+	@Override
+	public void fly() {
+		Double flightTime = (((this.getRange()/this.getSpeed())*60)*.75);
+		System.out.println("Cargo Plane " + (this.getModel()) + " at a cruising speed of " + (this.getSpeed()*.75) + " kph, has approximately " + (flightTime) + " minutes of flightTime remaining (estimated)" );
+
+		
 	}
 	// TODO Auto-generated method stub
 

@@ -47,14 +47,12 @@ public abstract class Jet {
 	}
 
 	public String toString() {
-		String output = "model=" + model + ", speed=" + speed + ", range=" + range + ", price=" + price;
+		String output = "model name=" + model + ", speed(kph)=" + speed + ", range=(km)" + range + ", price=$" + price;
 		return output;
 	}
 
 	public void fly() {
-		String jetData = this.toString();
-		System.out.println(jetData);
-
+	
 	}
 
 //		toString(); double flightTime; flightTime = range/speed;

@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class AirField {
-	
+
 	public AirField() {
 		super();
 		fillField();
@@ -16,12 +16,9 @@ public class AirField {
 
 	Scanner sc = new Scanner(System.in);
 	private List<Jet> jets;
-// class
 
 	public void fillField() {
 		jets = new ArrayList<Jet>();
-		
-		// setJets(new ArrayList<>());
 
 		try (BufferedReader bufIn = new BufferedReader(new FileReader("jets.txt"))) {
 			String line = null;
@@ -30,29 +27,27 @@ public class AirField {
 
 				Jet jetCreate = null;
 
-				// System.out.println(line);
 				if (parts[0].equals("Cargo")) {
 					jetCreate = new CargoPlane(parts[1], Double.parseDouble(parts[2]), Integer.parseInt(parts[3]),
 							Long.parseLong(parts[4]));
-//					this.jets.add(new CargoPlane(parts[1], parts[2], parts[3], parts[4]));
+
 				}
 				if (parts[0].equals("Jam")) {
 					jetCreate = new JamPlane(parts[1], Double.parseDouble(parts[2]), Integer.parseInt(parts[3]),
 							Long.parseLong(parts[4]));
-//					this.jets.add(new JamPlane(parts[1], parts[2], parts[3], parts[4]));
+				}
+				if (parts[0].equals("Alien")) {
+					jetCreate = new JetImpl(parts[1], Double.parseDouble(parts[2]), Integer.parseInt(parts[3]),
+							Long.parseLong(parts[4]));
+				}
 
-				} // if
 				jets.add(jetCreate);
 			} // while
 		} catch (IOException e) {
 			System.err.println(e);
 		}
-//	for (Jet jet : jets) {
-//		System.out.println(jet.getClass().getSimpleName());
-//	}
 
 	}// ctor
-
 
 	public void loadAllJamJets() {
 		for (Jet jet : jets) {
@@ -111,8 +106,19 @@ public class AirField {
 	}
 
 	public void addJet() {
-		Jet userJet = new CargoPlane("Tinman", 20000, 50000, 1);
-		jets.add(userJet);
+		System.out.println("What would you call this plane?");
+		String model = sc.next();
+		System.out.println("How fast (kilometers/second) does it go?");
+		double speed = sc.nextDouble();
+		System.out.println("How far (kilometers) can you... I mean it... go?");
+		int range = sc.nextInt();
+		System.out.println("What are you worth... what would you pay?");
+		long price = sc.nextLong();
+		jets.add(new JetImpl(model, speed, range, price));
+		System.out.println("It's your lucky day! An alien ship that absorbs compatible hosts descends... you are now a... plane... ship... thing!");
+		
+		
+//		Jet userJet = new JetImpl("Tinman", 20000, 50000, 1);
 	}
 
 	public void removeJet() {
@@ -124,8 +130,8 @@ public class AirField {
 		}
 		System.out.println("Which jet would you like to remove?");
 		int j = sc.nextInt();
-		removeJet = jets.remove(j-1);
+		removeJet = jets.remove(j - 1);
 		System.out.println(removeJet);
 
-	}
+	}// removeJet()
 }// class

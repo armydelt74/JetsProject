@@ -1,5 +1,6 @@
-Cargo,tarhill,500,200,11000
-Jam,tarmack,600,300,15500
-Cargo,tarley,300,1500,1350
-Jam,target,900,999,1650
-Cargo,tartar,500,100,12500
+Cargo,Tarhill,500,2000,1100000
+Jam,Tarmack,600,3000,1550000
+Cargo,Tarley,300,1500,1350000
+Jam,Target,900,1200,1650000
+Cargo,Tartar,500,1000,1250000
+Alien,Cyberia,20000,200000,80000000
