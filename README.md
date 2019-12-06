@@ -6,19 +6,19 @@ Jets have a fly() method that prints out the jets in flight details for estimate
 
 
 Jet.java itself is an abstract base class -- its purpose it to be extended by other types with different behavior.
-That said, you will still have a plain vanilla JetImpl (which serves as catch all for other models including alien UFO)
+That said, you will still have a plain vanilla JetImpl.class (which serves as catch all for other models including alien UFOs)
 
-You must create two interfaces of your choice for specializations of Jets. For example, CargoCarrier could have a loadCargo() method (which just prints out a message about loading cargo). CombatReady could have a method fight().
+Created two interfaces for specializations of Jets; CargoCarrier has loadCargo() method (which just prints out a message about loading cargo). Jamming has method fight()... just with Jam.
 
 The two implementation classes (Cargo and Jam) implement respective interfaces. The classes capabilities are loading cargo and jamming.
 
 ### Topics Covered
-Array instantiation, passing methods, calling methods
-List Array/String Array; Super/sub Class & inheritance; UML project creation
+Array instantiation, passing methods, calling methods.
+List Array/String Array; Super/sub Class & inheritance; UML project creation.
 
 ### Concepts
 
-List Array/String Array; Super/sub Class & inheritance; UML project creation
+List Array/String Array; Super/sub Class & inheritance; UML project creation.
 
 ### Technology Used
 
@@ -29,4 +29,5 @@ Build id: 20190917-1200
 Github
 
 #### Lessons Learned
-system.out.println((Topics Cover) + "and also" (Concepts) + "hopefully better ways Time management
+Do more ahead of time and don't try to do two projects during holidays - finish one or the other.
+system.out.println((Topics Cover) + "and also" (Concepts) + "hopefully better time management.""
